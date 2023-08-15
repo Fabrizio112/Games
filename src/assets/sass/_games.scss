@@ -1,0 +1,32 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    .button-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 200px;
+
+        .btn-link {
+            @extend .btn;
+            width: 150px;
+            height: 40px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.board-memory {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.square-memory {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.black {
+    background-color: black;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.disabled {
+    background-color: white;
+}
+
+.matched {
+    background-color: gray;
+}
+
+.modal-memory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0000008e;
+}
+
+.modal-card-memory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 15px;
+}

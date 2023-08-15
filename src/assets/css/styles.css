@@ -1,0 +1,278 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+}
+.home h1 {
+  font-size: 5rem;
+}
+.home .button-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 200px;
+}
+.home .button-container .btn-link {
+  width: 150px;
+  height: 40px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-tateti {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  gap: 1rem;
+  place-content: center;
+  margin: 1rem 0;
+}
+
+.square-tateti {
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 120px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.game-tateti {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.game-tateti h1 {
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.turns-container-tateti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  gap: 0.3rem;
+}
+.turns-container-tateti div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.active {
+  background-color: rgba(7, 132, 255, 0.9882352941);
+  color: white;
+  border: none !important;
+}
+
+.modal-tateti {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4784313725);
+  height: 100%;
+}
+
+.card-modal-tateti {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.btn, .home .button-container .btn-link {
+  background-color: rgba(7, 132, 255, 0.9882352941);
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.tie {
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 60vh;
+  gap: 1rem;
+}
+
+.simon-square {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+.simon-square:active {
+  opacity: 1 !important;
+}
+
+.simon-square:nth-child(1) {
+  background-color: red;
+  opacity: 0.5;
+}
+
+.simon-square:nth-child(2) {
+  background-color: blue;
+  opacity: 0.5;
+}
+
+.simon-square:nth-child(3) {
+  background-color: green;
+  opacity: 0.5;
+}
+
+.simon-square:nth-child(4) {
+  background-color: yellow;
+  opacity: 0.5;
+}
+
+.is-active {
+  opacity: 1 !important;
+}
+
+.modal-simon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5411764706);
+}
+
+.modal-card-simon {
+  width: 300px;
+  height: 250px;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  gap: 1rem;
+  padding: 1rem;
+}
+.modal-card-simon p {
+  text-align: center;
+}
+
+.oculto {
+  display: none;
+}
+
+.board-memory {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.square-memory {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  padding: 0;
+  margin: 0;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.black {
+  background-color: black;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.disabled {
+  background-color: white;
+}
+
+.matched {
+  background-color: gray;
+}
+
+.modal-memory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5568627451);
+}
+
+.modal-card-memory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 15px;
+}
+
+html {
+  position: relative;
+}
+
+/*# sourceMappingURL=styles.css.map */
