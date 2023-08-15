@@ -1,6 +1,6 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
-import TatetiApp from "./Ta-te-ti/components/tatetiApp";
+import TatetiApp from "./Ta-te-ti/components/TatetiApp";
 import MemoryTestApp from "./Memory-Test/components/MemoryTestApp";
 import SimonDiceApp from "./Simon-Dice/components/SimonDiceApp";
 
