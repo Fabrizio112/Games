@@ -2,8 +2,12 @@ import { useState } from "react"
 
 export const useStartGame = () => {
     const [startGame, setStartGame] = useState(true)
-    const startGaming = () => {
+
+    const startGameForUser = () => {
         setStartGame(false)
     }
-    return [startGaming, startGame]
+    const resetStartGame = () => {
+        setStartGame(true)
+    }
+    return [startGameForUser, startGame, resetStartGame]
 }

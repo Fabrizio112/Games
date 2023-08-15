@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+
 import MemorySquare from "./MemorySquare";
 import ModalFinish from "./ModalFinish";
 import ModalStart from "./ModalStart";
@@ -16,7 +16,7 @@ function MemoryTest() {
     const [changeTurn, resetTurn, turn] = useTurn()
     const [endGame, resetGameFinish, gameFinish] = useGameFinish()
     const [randomInitialColors, color, changeColor] = useColors()
-    const [startGame, startGaming] = useStartGame()
+    const [startGameForUser, startGame, resetStartGame] = useStartGame()
     const [incrementCount, resetCount] = useCountDisabled(endGame)
     const [selectCard] = usePlayerPlay(incrementCount, changeTurn)
 
@@ -28,6 +28,7 @@ function MemoryTest() {
         changeColor(randomInitialColors())
         resetGameFinish()
         resetTurn()
+        resetStartGame()
     }
 
 
@@ -35,7 +36,7 @@ function MemoryTest() {
         <>
             <button onClick={() => navigate(-1)} className="btn-link">Back</button >
             <section className="board-memory">
-                {startGame === true && <ModalStart startGaming={startGaming} />}
+                {startGame && <ModalStart startGameForUser={startGameForUser} />}
                 {color != null && color.map((color, index) => <MemorySquare key={index} color={color} selectCard={selectCard} />)}
                 {(gameFinish === true && turn) && <ModalFinish resetGame={resetGame} turn={turn} />}
             </section>
