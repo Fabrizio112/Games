@@ -5,9 +5,9 @@ function Home() {
         <p>Select the game that you want to play </p>
         <span>Have Fun !!!</span>
         <div className="button-container">
-            <Link className="btn-link" to="/ta-te-ti">Ta-Te-Ti</Link>
+            <Link className="btn-link" to="/ta-te-ti">Tic-Tac-Toe</Link>
             <Link className="btn-link" to="/memory-test">Memory Test</Link>
-            <Link className="btn-link" to="/simon-dice">Simon Dice</Link>
+            <Link className="btn-link" to="/simon-dice">Simon Says</Link>
         </div>
     </section>);
 }

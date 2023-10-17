@@ -37,8 +37,8 @@ function SimonDiceApp() {
             <button onClick={() => navigate(-1)} className="btn-link">Back</button >
             <section>
                 <header>
-                    <h1>Simon Dice</h1>
-                    <h3>Ronda {turnCount}</h3>
+                    <h1>Simon Says</h1>
+                    <h3>Turn {turnCount}</h3>
                 </header>
                 <main>
                     <SimonSquare id={0} ref={redSquare} jugadaDelUsuario={jugadaDelUsuario} />

@@ -1,4 +1,3 @@
-import confetti from "canvas-confetti"
 import { useState } from "react"
 
 export const useGameFinish = () => {
