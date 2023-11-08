@@ -2,7 +2,7 @@
 
 ## <i align="center" style="font-size:2rem"> 🎮 MINI JUEGOS CON REACT</i>
 
-En este proyecto se usaron hooks como **useState,useEffect** , tenologias como  **HTML,CSS,JavaScript,React,SASS** y para el manejo de rutas **React Router**
+En este proyecto se usaron hooks como **useState,useEffect** , tenologias como  **HTML,CSS,JavaScript,React,SASS** y para el manejo de rutas **React Router**.
 
  _Este proyecto fue construido con el proposito de practicar React_
 
@@ -28,9 +28,9 @@ Como los desarrolle individualmente voy a explicar uno por uno su desarrollo:
 
 Nota: Este proyecto ya lo habia realizado previamente con JS Vanilla por lo que tome como referencia ese proyecto para poder reconstruirlo pero en React
 
-Lo primero que realice fue el tablero, que es el comoponente llamado **_"SimonSquare"_**, en un primer momento solamente eran secciones vacias/planas sin nada. Luego al estar un poco mas avanzado en la creacion del juego decidi cambiar un poco este componente y que acepte diferentes parametros. Principalmente un **ID**, este ID es importante por que al momento de comparar la jugada de la maquina y la jugada del ususario este ID coincide a su vez con la referencia de la seccion y de la jugada . A su vez tambien se le pasa por parametro su respectiva **Referencia** para poder identificarlo y estilizarlo , y la funcion que realiza la **jugada del usuario**
+Lo primero que realice fue el tablero, que es el comoponente llamado **_"SimonSquare"_**, en un primer momento solamente eran secciones vacias/planas sin nada. Luego al estar un poco mas avanzado en la creacion del juego decidi cambiar un poco este componente y que acepte diferentes parametros. Principalmente un **ID**, este ID es importante por que al momento de comparar la jugada de la maquina y la jugada del ususario este ID coincide a su vez con la referencia de la seccion y de la jugada . A su vez tambien se le pasa por parametro su respectiva **Referencia** para poder identificarlo y estilizarlo , y la funcion que realiza la **jugada del usuario**.
 
-Cree un hook personalizado que me permitia guardar la logica de la jugada de la maquina, otro que me permite guardar  la logica de la jugada del usuario , otro que me permite saber el turno  y por ultimo un hook que me permite saber si el juego termino o no
+Cree un hook personalizado que me permitia guardar la logica de la jugada de la maquina, otro que me permite guardar  la logica de la jugada del usuario , otro que me permite saber el turno  y por ultimo un hook que me permite saber si el juego termino o no.
 
 ### Juego de Memoria :
 
